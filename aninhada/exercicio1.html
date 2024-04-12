@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSE-SENAI</title>
+    <style>
+        body{
+            font:normal 12pt Arial ;
+        }
+        input.idade{
+            font: normal 10pt Arial;
+            width: 50px;
+        }
+        .resultado{
+            padding-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Verificação de Idade para Votação</h1>
+    <span>Digite sua idade:</span>
+    <input type="number" id="idade" class="idade">
+    <br>
+    <input type="button" value="Verificar" onclick="verificarIdadeVotacao()">
+    <br>
+    <div id="res" class="resutado">Resultado</div>
+
+    <script>
+        function verificarIdadeVotacao(){
+            var idade = document.querySelector('input#idade').valueAsNumber
+            var mensagem
+
+            if(idade < 16) {
+                mensagem = 'não vota!'
+            }
+        }
+        
+    </script>
+</body>
+</html>
