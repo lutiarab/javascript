@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saudações Animadas</title>
+   <link rel="stylesheet" href="style.css">
+</head >
+<body onload="carregar()"><!--assim que carregar o site, -->
+    <header >
+        <h1>verificador de idade</h1>
+    </header>
+
+    <section>
+        <div >
+            <p>Ano de Nascimento:</p>
+            <input type="number" name="txtano" id="txtano" min="1900"><!--min é valor minimo no imput-->
+            <p>Sexo:
+            <input type="radio" name="radsex" id="masc" checked><!--radio cria a bolinh / checked seleciona a bolinha-->
+            <label for="mas">Macuino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="verificar" onclick="verificar()">
+            </p>
+        </div>
+
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy VS Code Corporation</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

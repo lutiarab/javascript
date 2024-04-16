@@ -1,6 +1,7 @@
 body{
     background-color: #1E90FF;/*DodgerBlue*/
     font: normal 15pt Arial;
+    text-align: center;
 }
 header{
     color: white;
@@ -18,4 +19,8 @@ footer{
     color: white;
     text-align: center;
     font-style: italic;
+}
+div{
+    text-align: center;
+    padding: 10px;
 }
