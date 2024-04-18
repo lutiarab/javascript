@@ -26,13 +26,16 @@ function verificar() {
         //testar se é criança, jovem, adulto ou idoso
         if (idade >= 0 && idade < 10){
             //criança
-            img.setAttribute('src', 'foto-criança-m.png')
+            img.setAttribute('src', 'foto-crianca-m.png')
         } else if(idade < 21){
             //jovem
+            img.setAttribute('src', 'foto-jovem-m.png')
         }else if(idade < 50){
             //adulto
+            img.setAttribute('src', 'foto-adulto-m.png')
         }else{
             //idoso
+            img.setAttribute('src', 'foto-idoso-m.png')
         }
 
 
@@ -42,15 +45,18 @@ function verificar() {
         //testar se é criança, jovem, adulta ou idosa
         if (idade >= 0 && idade < 10){
             //criança
-            img.setAttribute('src', 'foto-criança-f.png')
+            img.setAttribute('src', 'foto-crianca-f.png')
         } else if(idade < 21){
             //jovem
+            img.setAttribute('src', 'foto-jovem-f.png')
         }else if(idade < 50){
             //adulto
+            img.setAttribute('src', 'foto-adulto-f.png')
         }else{
             //idoso
+            img.setAttribute('src', 'foto-idoso-f.png')
        }
-    }
+        }
        res. innerHTML = `Detectamos ${genero} com ${idade} anos.`
     }
 
